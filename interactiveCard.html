@@ -11,44 +11,63 @@
 <body>
     <section class="wrapper">
         <div class="left">
-            <img class="card-1" src="./images/bg-card-front.png" alt="">
-            <img class="card-2" src="./images/bg-card-back.png" alt="">
+            <div class="card-1">
+                <img src="./images/bg-card-front.png" alt="">
+                <div class="card-wrapper">
+                    <img src="./images/card-logo.svg" alt="">
+                    <div class="card-number">
+                        <p>9591 6489 6389 101E</p>
+                    </div>
+                    <div class="card-name">
+                        <p>felisia leire</p>
+                        <p>09/00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-2">
+                <img src="./images/bg-card-back.png" alt="">
+                <div class="card-wrapper-1">
+                    <div class="card-cvc">
+                        <p>000</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="right">
             <div class="wrapper-1">
-                 <div class="fild">
-                <!-- <form class="pyment"> -->
+                <div class="fild">
+                    <!-- <form class="pyment"> -->
                     <label>CARDHOLDER NAME</label>
                     <input type="text" placeholder="felisia leire">
-                <!-- </form> -->
-            </div>
-            <div class="fild-1">
-                <!-- <form class="pyment-1"> -->
+                    <!-- </form> -->
+                </div>
+                <div class="fild-1">
+                    <!-- <form class="pyment-1"> -->
                     <label>CARD NUMBER</label>
                     <input type="Number" placeholder="9591 6489 6389 101E" inputmode="numeric">
-                     <p>Wrong format,numbers only</p>
-                <!-- </form> -->
-            </div>
-            <div class="fild-4">
-                 <div class="fild-2">
-                <!-- <form class="pyment-2"> -->
-                    <label>EXP.DATE (MM/YY) </label>
-                    <div class="inp">
-                    <input class="in-1"type="Number" placeholder="09" inputmode="numeric">
-                    <input class="in-2" type="Number" placeholder="YY" inputmode="numeric">
+                    <p>Wrong format,numbers only</p>
+                    <!-- </form> -->
+                </div>
+                <div class="fild-4">
+                    <div class="fild-2">
+                        <!-- <form class="pyment-2"> -->
+                        <label>EXP.DATE (MM/YY) </label>
+                        <div class="inp">
+                            <input class="in-1" type="Number" placeholder="09" inputmode="numeric">
+                            <input class="in-2" type="Number" placeholder="YY" inputmode="numeric">
+                        </div>
+                        <p>Can't be blank</p>
+                        <!-- </form> -->
                     </div>
-                    <p>Can't be blank</p>
-                <!-- </form> -->
-            </div>
-             <div class="fild-3">
-                 <!-- <form class="pyment-3"> -->
-                    <label>CVC </label>
-                    <input type="Number" placeholder="e.g.123" inputmode="numeric">
-                    <p>Can't be blank</p>
-                <!-- </form> -->
-            </div>
-            </div>
-            <button class="bt">Confirm</button>
+                    <div class="fild-3">
+                        <!-- <form class="pyment-3"> -->
+                        <label>CVC </label>
+                        <input type="Number" placeholder="e.g.123" inputmode="numeric">
+                        <p>Can't be blank</p>
+                        <!-- </form> -->
+                    </div>
+                </div>
+                <button class="bt">Confirm</button>
             </div>
         </div>
     </section>
