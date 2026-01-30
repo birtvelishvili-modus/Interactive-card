@@ -21,12 +21,14 @@ body {
     align-items: center;
 }
 
+
 .wrapper {
     display: flex;
     width: 100%;
     height: 100vh;
 }
 
+/* .left-ის წაშლის შემდეგ ადგილები იცვლება და გადაადგილება მოხდება */
 .left {
     background-image: url("./images/bg-main-desktop.png");
     background-repeat: no-repeat;
@@ -39,6 +41,7 @@ body {
     position: relative;
 }
 
+/* ამის წაშლის შემდეგ card-1 გადმოდის .card-2-ის გვერდით და მასზე არსებული ინფორმაცია გამოდის გარეთ */
 .card-1 {
     position: absolute;
     right: -130px;
@@ -52,6 +55,7 @@ body {
     border-radius: 10px;
 }
 
+/* ამის წაშლის შემდეგ card-1-ზე არსებული ინფორმაცია გამოდის გარეთ */
 .card-wrapper {
     position: absolute;
     top: 0;
@@ -66,12 +70,14 @@ body {
     letter-spacing: 2px;
 }
 
+/* ეს გავლენას ახდენს card-1-ზე არსებული ინფორმაციის font-size-ს და margin-top-ს და margin-bottom-ს */
 .card-number {
     font-size: 28px;
     margin-top: auto;
     margin-bottom: 25px;
 }
 
+/* ეს საშუალებას აძლევს card-name-ში არსებული მონაცემების შეფუთვას და მის განლაგებას */
 .card-name {
     display: flex;
     justify-content: space-between;
@@ -79,12 +85,14 @@ body {
     font-size: 14px;
 }
 
+/* ამის წაშლის შემდეგ card-2 გადმოდის card-1-ის მარცხენა მხარეს */
 .card-2 {
     position: absolute;
     right: -220px;
     top: 55%;
 }
 
+/* ამის წაშლის შემდეგ card-2-ზე არსებული ინფორმაცია გამოდის გარეთ */
 .card-wrapper-1 {
     position: absolute;
     top: 0;
@@ -97,11 +105,13 @@ body {
     padding-right: 55px;
 }
 
+/* ეს გავლენას ახდენს card-2-ზე არსებული ინფორმაციის font-size-ს და margin-top-ს და margin-bottom-ს */
 .card-cvc {
     color: var(--white);
     font-size: 14px;
 }
 
+/* ამის წაშლის შემდეგ  .right  ნახევრად შედის მარცხენა მხარეს */
 .right {
     width: 65%;
     display: flex;
@@ -110,6 +120,7 @@ body {
     padding-left: 150px;
 }
 
+/* ეს განსაზღვრავს .wrapper-1-ში არსებული მონაცემების განლაგებას და ზომას */
 .wrapper-1 {
     width: 100%;
     max-width: 400px;
@@ -118,6 +129,7 @@ body {
     gap: 20px;
 }
 
+/* ეს განსაზღვრავს .fild-1, .fild-2, .fild-3 მონაცემების განლაგებას და ზომას */
 .fild,
 .fild-1,
 .fild-2,
@@ -127,10 +139,12 @@ body {
     gap: 8px;
 }
 
+/* ეს განსაზღვრავს .fild-1-ის ბორდერის ფერს*/
 .fild-1 input {
     border: 1px solid var(--red);
 }
 
+/* ეს განსაზღვრავს label-ის ფონტის ზომას*/
 label {
     font-size: 12px;
     letter-spacing: 2px;
@@ -138,6 +152,7 @@ label {
     font-weight: 500;
 }
 
+/* ეს განსაზღვრავს input-ის ველების ზომას*/
 input {
     padding: 12px 16px;
     border: 1px solid var(--light-grayish-violet);
@@ -148,6 +163,7 @@ input {
     transition: border-color 0.3s;
 }
 
+/* ეს განსაზღვრავს input ველების border-ის ფერის */
 input:focus {
     border-color: var(--very-dark-violet);
 }
@@ -156,29 +172,35 @@ input::placeholder {
     color: var(--light-grayish-violet);
 }
 
+/* ეს განსაზღვრავს .inp-ის .in-2  border-ის ფერის */
 .inp .in-2 {
     border: 1px solid var(--red);
 }
 
+/* ეს განსაზღვრავს .fild-3-ის input-ის border-ის ფერის */
 .fild-3 input {
     border: 1px solid var(--red);
 }
 
+/* ეს არის .fild-2-ის და fild-3-ის შემფუთავი*/
 .fild-4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+/* ეს არის .inp-ში არსებული კლასების შემფუთავი */
 .inp {
     display: flex;
     gap: 10px;
 }
 
+/* ეს განსაზღვრავს .inp-ის input ველების ზომას */
 .inp input {
     width: 100%;
 }
 
+/* ეს განსაზღვრავს .bt-ის განლაგებას, ზომას, ფერს და სტილს */
 .bt {
     background-color: var(--very-dark-violet);
     color: var(--white);
@@ -191,12 +213,14 @@ input::placeholder {
     margin-top: 10px;
 }
 
+/* ეს განსაზღვრავს .wrapper-1-ის p  ზომას, ფერს და სტილს */
 .wrapper-1 p {
     color: var(--red);
     font-size: 12px;
     margin-top: 5px;
 }
 
+/* ეს განსაზღვრავს .card-wrapper-1 და .card-wrapper-1-ის p ველების ზომას, ფერს და სტილს */
 .card-wrapper p,
 .card-wrapper-1 p {
     color: var(--white);
@@ -204,17 +228,21 @@ input::placeholder {
     padding: 0;
 }
 
-/* Small adjustments for layout consistency */
+/* ეს განსაზღვრავს .card-wrapper-ის სურათის ზომას */
 .card-wrapper>img {
     width: 80px;
 }
 
+/* აქედან იწყება მობილური ვერსიის განსაზღვრა */
 @media (max-width: 600px) {
+
+    /* ეს განსაზღვრავს .wrapper-ში არსებული კონტენტის განლაგებას */
     .wrapper {
         flex-direction: column;
         height: auto;
     }
 
+    /* ეს განსაზღვრავს .left-ის განლაგებას და ზომას */
     .left {
         width: 100%;
         height: 280px;
@@ -223,12 +251,14 @@ input::placeholder {
         align-items: center;
     }
 
+    /* ეს განსაზღვრავს .card-1 და .card-2-ის განლაგებას და ზომას */
     .card-1,
     .card-2 {
         position: absolute;
         transform: scale(0.7);
     }
 
+    /* ეს განსაზღვრავს .card-1-ის განლაგებას */
     .card-1 {
         top: 125px;
         left: 50%;
@@ -237,6 +267,7 @@ input::placeholder {
         z-index: 20;
     }
 
+    /* ეს განსაზღვრავს .card-2-ის განლაგებას */
     .card-2 {
         top: 35px;
         left: 50%;
@@ -244,27 +275,33 @@ input::placeholder {
         margin-left: -200px;
     }
 
+    /* ეს განსაზღვრავს .right-ის განლაგებას და ზომას */
     .right {
         width: 100%;
         padding: 90px 24px 40px;
     }
 
+    /* ეს განსაზღვრავს .wrapper-1-ის ზომას */
     .wrapper-1 {
         max-width: 100%;
     }
 
+    /* ეს განსაზღვრავს .fild-1-ის input-ის border-ის ფერს */
     .fild-1 input {
         border: 1px solid var(--light-grayish-violet);
     }
 
+    /* ეს განსაზღვრავს .fild-2-ის .in-2 input-ის border-ის ფერს */
     .fild-2 .in-2 {
         border: 1px solid var(--light-grayish-violet);
     }
 
+    /* ეს განსაზღვრავს .fild-3-ის input-ის border-ის ფერს */
     .fild-3 input {
         border: 1px solid var(--light-grayish-violet);
     }
 
+    /* ეს წასაშლელია */
     .fild-3 input {
         border: 1px solid var(--light-grayish-violet);
     }
