@@ -180,6 +180,7 @@ input::placeholder {
 /* ეს განსაზღვრავს .fild-3-ის input-ის border-ის ფერის */
 .fild-3 input {
     border: 1px solid var(--red);
+    width: 10vw;
 }
 
 /* ეს არის .fild-2-ის და fild-3-ის შემფუთავი*/
@@ -197,7 +198,7 @@ input::placeholder {
 
 /* ეს განსაზღვრავს .inp-ის input ველების ზომას */
 .inp input {
-    width: 100%;
+    width: 5vw;
 }
 
 /* ეს განსაზღვრავს .bt-ის განლაგებას, ზომას, ფერს და სტილს */
