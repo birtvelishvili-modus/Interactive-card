@@ -302,3 +302,79 @@ input::placeholder {
         border: 1px solid var(--light-grayish-violet);
     }
 }
+
+/* აქედან იწყება მობილური ვერსიის განსაზღვრა */
+@media (max-width: 900px) {
+
+    /* ეს განსაზღვრავს .wrapper-ში არსებული კონტენტის განლაგებას */
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* ეს განსაზღვრავს .left-ის განლაგებას და ზომას */
+    .left {
+        width: 100vw;
+        height: 60vh;
+        background-image: url("./images/bg-main-mobile.png");
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1>img,
+    .card-2>img {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        height: 40vh;
+    }
+
+    /* ეს განსაზღვრავს .card-1 და .card-2-ის განლაგებას და ზომას */
+    .card-1,
+    .card-2 {
+        position: absolute;
+        transform: scale(0.7);
+    }
+
+    /* ეს განსაზღვრავს .card-1-ის განლაგებას */
+    .card-1 {
+        top: 20vh;
+        left: 25vw;
+        right: auto;
+        margin-left: -240px;
+        z-index: 20;
+    }
+
+    /* ეს განსაზღვრავს .card-2-ის განლაგებას */
+    .card-2 {
+        top: -2vh;
+        left: 50%;
+        right: auto;
+        margin-left: -200px;
+    }
+
+    /* ეს განსაზღვრავს .right-ის განლაგებას და ზომას */
+    .right {
+        width: 100%;
+        padding: 90px 24px 40px;
+    }
+
+    /* ეს განსაზღვრავს .wrapper-1-ის ზომას */
+    .wrapper-1 {
+        max-width: 100%;
+    }
+
+    /* ეს განსაზღვრავს .fild-1-ის input-ის border-ის ფერს */
+    .fild-1 input {
+        border: 1px solid var(--light-grayish-violet);
+    }
+
+    /* ეს განსაზღვრავს .fild-2-ის .in-2 input-ის border-ის ფერს */
+    .fild-2 .in-2 {
+        border: 1px solid var(--light-grayish-violet);
+    }
+
+    /* ეს განსაზღვრავს .fild-3-ის input-ის border-ის ფერს */
+    .fild-3 input {
+        border: 1px solid var(--light-grayish-violet);
+    }
+}
