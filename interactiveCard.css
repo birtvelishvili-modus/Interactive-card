@@ -187,7 +187,7 @@ input::placeholder {
 .fild-4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 12px;
 }
 
 /* ეს არის .inp-ში არსებული კლასების შემფუთავი */
