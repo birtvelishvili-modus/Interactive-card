@@ -300,9 +300,4 @@ input::placeholder {
     .fild-3 input {
         border: 1px solid var(--light-grayish-violet);
     }
-
-    /* ეს წასაშლელია */
-    .fild-3 input {
-        border: 1px solid var(--light-grayish-violet);
-    }
 }
